@@ -15,6 +15,7 @@
 		310D5C771D9BB24F0000BF8A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D5C761D9BB24F0000BF8A /* CustomTableViewCell.swift */; };
 		3197D8FF1D9BBAFD0016F33A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197D8FE1D9BBAFD0016F33A /* DetailViewController.swift */; };
 		3197D9011D9BC0510016F33A /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197D9001D9BC0510016F33A /* CustomCollectionViewCell.swift */; };
+		3197D9631DA147A00016F33A /* Custom2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197D9621DA147A00016F33A /* Custom2TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		310D5C761D9BB24F0000BF8A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3197D8FE1D9BBAFD0016F33A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		3197D9001D9BC0510016F33A /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		3197D9621DA147A00016F33A /* Custom2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom2TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				310D5C641D9BB1AD0000BF8A /* AppDelegate.swift */,
 				310D5C661D9BB1AD0000BF8A /* ViewController.swift */,
 				310D5C761D9BB24F0000BF8A /* CustomTableViewCell.swift */,
+				3197D9621DA147A00016F33A /* Custom2TableViewCell.swift */,
 				3197D9001D9BC0510016F33A /* CustomCollectionViewCell.swift */,
 				3197D8FE1D9BBAFD0016F33A /* DetailViewController.swift */,
 				310D5C681D9BB1AD0000BF8A /* Main.storyboard */,
@@ -150,6 +153,7 @@
 				310D5C671D9BB1AD0000BF8A /* ViewController.swift in Sources */,
 				310D5C651D9BB1AD0000BF8A /* AppDelegate.swift in Sources */,
 				3197D8FF1D9BBAFD0016F33A /* DetailViewController.swift in Sources */,
+				3197D9631DA147A00016F33A /* Custom2TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

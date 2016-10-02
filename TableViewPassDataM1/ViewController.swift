@@ -20,24 +20,55 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell0 = tableView.dequeueReusableCell(withIdentifier: "tableCell0") as? CustomTableViewCell
-//        cell0?.dataArray = dataArray1
-        return cell0!
+//        let cell0 = tableView.dequeueReusableCell(withIdentifier: "tableCell0") as? CustomTableViewCell
+////        cell0?.dataArray = dataArray1
+//        return cell0!
+        if indexPath.row == 0 {
+            let cell0 = tableView.dequeueReusableCell(withIdentifier: "tableCell0") as? CustomTableViewCell
+            return cell0!
+        } else if indexPath.row == 1 {
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: "tableCell0") as? CustomTableViewCell
+            return cell1!
+        } else {
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: "tableCell1") as? Custom2TableViewCell
+            
+            return cell2!
+        }
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableViewCell = cell as? CustomTableViewCell else { return }
-        tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: (indexPath as NSIndexPath).row)
+//        guard let tableViewCell = cell as? CustomTableViewCell else { return }
+//        tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: (indexPath as NSIndexPath).row)
+        if indexPath.row == 0 {
+            guard let tableViewCell = cell as? CustomTableViewCell else { return }
+            tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: (indexPath as NSIndexPath).row)
+        } else if indexPath.row == 1 {
+            guard let tableViewCell = cell as? CustomTableViewCell else { return }
+            tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: (indexPath as NSIndexPath).row)
+        } else {
+            guard let tableViewCell2 = cell as? Custom2TableViewCell else { return }
+            tableViewCell2.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: (indexPath as NSIndexPath).row)
+        }
+        
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 200
+        } else if indexPath.row == 1 {
+            return 200
+        } else {
+            return 400
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataArray1 = ["Dog", "Ant", "Bird", "Pig"]
+        dataArray1 = ["Dog", "Ant", "Bird", "Pig", "Worm", "Rat", "Snake", "Tiger", "Lion"]
         
         // Do any additional setup after loading the view, typically from a nib.
     }
