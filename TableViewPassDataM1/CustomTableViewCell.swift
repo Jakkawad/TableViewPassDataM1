@@ -10,6 +10,8 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    var dataArray = [String]()
+    
     @IBOutlet weak var collectionView:UICollectionView!
     
     override func awakeFromNib() {

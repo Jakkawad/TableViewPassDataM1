@@ -20,11 +20,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell0 = tableView.dequeueReusableCell(withIdentifier: "tableCell0") as? CustomTableViewCell
+//        cell0?.dataArray = dataArray1
         return cell0!
     }
     
